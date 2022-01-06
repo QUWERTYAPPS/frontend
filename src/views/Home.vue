@@ -8,7 +8,7 @@
 					<q-btn color="primary" icon="skip_next" />
 				</q-btn-group>
 				<div class="absolute-top-center bottom-border-radious width-300 padding-16px bg-grey-9">
-					<img class="rounded-borders" src="@/assets/sample/c1.jpg" width="30" />
+					<img class="rounded-borders" src="@/assets/samples/nevermind.jpg" width="30" />
 					<div class="absolute-top-center margin-top-16px">
 						<div>{{ title }} || {{ author }}</div>
 						<div class="align-center color-grey-6">{{ album }}</div>
@@ -45,9 +45,9 @@
 		data() {
 			return {
 				playing: false,
-				title: 'testsong1',
-				author: 'testAuthor',
-				album: 'testAlbum',
+				title: 'Lithium',
+				author: 'Nirvana',
+				album: 'Nevermind',
 				loop: false,
 				shuffle: false,
 				active: 'listen-now',

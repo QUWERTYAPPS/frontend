@@ -12,7 +12,7 @@
 </template>
 
 <script>
-	import '@/styles/Login.sass'
+	import '@/styles/LoginAndRegister.sass'
 
 	export default {
 		name: 'Register',
