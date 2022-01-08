@@ -7,9 +7,9 @@
 </template>
 
 <script>
-    import '@/styles/LoginAndRegister.sass'
+	import '@/styles/LoginAndRegister.sass'
 
-    export default {
+	export default {
 		name: 'Login',
 		data() {
 			return {
