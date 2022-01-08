@@ -1,8 +1,9 @@
 <template>
 	<div class="text-center justify-center">
-		<q-input class="width-300 margin-auto" v-model="mail" label="email" />
-		<q-input class="width-300 margin-auto" type="password" v-model="pass" label="password" />
-		<q-btn class="margin-4 width-300" color="primary" label="Login" />
+		<q-input class="width-300 margin-auto" v-model="mail" label="mail" model-value="" />
+		<q-input class="width-300 margin-auto" type="password" v-model="password" label="password" model-value="" />
+
+		<q-btn class="margin-4 width-300" color="primary" label="login" />
 	</div>
 </template>
 
@@ -14,10 +15,8 @@
 		data() {
 			return {
 				mail: '',
-				pass: '',
+				password: '',
 			}
 		},
 	}
 </script>
-
-<style scoped></style>
