@@ -1,39 +1,29 @@
 <template>
 	<div>
-		<div>
-			<h1 class="text-center">Listen Now</h1>
-			<p class="text-center">sort by views 😎</p>
+		<h1 class="text-center">Listen Now</h1>
+		<p class="text-center">sort by views 😎</p>
 
-			<div class="width-100p display-inline-block">
-				<q-card class="margin-16">
-					<div class="padding-16 scroll-x no-wrap">
-						<q-btn
-							color="grey-9"
-							:style="{ backgroundImage: '@/assets/samples/' + song.cover }"
-							v-for="song in sortedSongs"
-							:key="sortedSongs.indexOf(song)"
-							class="display-flex song-button margin-4"
-							style="width: 140px"
-						>
-							<img :src="require('@/assets/samples/' + song.cover)" class="rounded-borders float-left" width="128" height="128" alt="" />
-							<div class="margin-4">
-								<p class="song-title-tile">{{ song.title }}</p>
-								<p class="song-author-tile">{{ song.author }}</p>
-								<p class="song-album-tile">{{ song.album }}</p>
-							</div>
-						</q-btn>
-					</div>
-				</q-card>
-			</div>
+		<div class="width-100p display-inline-block">
+			<q-card class="margin-16">
+				<div class="padding-16 display-flex scroll-x no-wrap">
+					<SingeAlbumCard
+                        v-for="song in sortedSongs"
+                        :key="sortedSongs.indexOf(song)"
+                        :song="song"
+                    />
+				</div>
+			</q-card>
 		</div>
 	</div>
 </template>
 
 <script>
+	import SingeAlbumCard from '@/components/SingeAlbumCard'
 	import '@/styles/Home.sass'
 
 	export default {
 		name: 'ListenNow',
+		components: { SingeAlbumCard },
 		data() {
 			return {
 				songs: [

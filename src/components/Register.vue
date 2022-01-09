@@ -12,9 +12,9 @@
 
 		<q-date class="width-300 margin-4" default-view="Years" v-model="birthDate" title="birth date" model-value="" />
 
-        <section>
-            <q-btn class="margin-4 width-300" color="primary" label="Login" />
-        </section>
+		<section>
+			<q-btn class="margin-4 width-300" color="primary" label="Login" />
+		</section>
 	</div>
 </template>
 
