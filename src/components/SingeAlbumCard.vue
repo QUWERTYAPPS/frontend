@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<q-btn color="grey-9" :style="{ backgroundImage: '@/assets/samples/' + song.cover }" class="song-button margin-4" style="width: 140px">
-			<img :src="require('@/assets/samples/' + song.cover)" class="song-cover rounded-borders float-left" alt="" />
+			<img :src="require('@/assets/samples/' + song.cover)" class="song-cover rounded-borders shadow-6 float-left" alt="" />
 
-			<div class="margin-4">
+			<div class="margin-4 float-left">
 				<p class="song-title-tile">{{ song.title }}</p>
 				<p class="song-author-tile">{{ song.author }}</p>
 				<p class="song-album-tile">{{ song.album }}</p>

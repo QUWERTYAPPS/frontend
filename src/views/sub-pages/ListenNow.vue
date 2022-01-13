@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h1 class="text-center">Listen Now</h1>
-		<p class="text-center">sort by views 😎</p>
+		<p class="text-center">Most popular in your library</p>
 
 		<div class="width-100p display-inline-block">
 			<q-card class="margin-16">
@@ -14,6 +14,35 @@
 				</div>
 			</q-card>
 		</div>
+
+    <p class="text-center">Recomendations TODO: sort by: views in library divide views (Globaly)</p>
+
+    <div class="width-100p display-inline-block">
+      <q-card class="margin-16">
+        <div class="padding-16 display-flex scroll-x no-wrap">
+          <SingeAlbumCard
+              v-for="song in songs"
+              :key="songs.indexOf(song)"
+              :song="song"
+          />
+        </div>
+      </q-card>
+    </div>
+
+
+    <p class="text-center">will you add to the library? TODO: sort by: global views in last 24 hours !!Max 24 songs!!</p>
+
+    <div class="width-100p display-inline-block">
+      <q-card class="margin-16">
+        <div class="padding-16 display-flex scroll-x no-wrap">
+          <SingeAlbumCard
+              v-for="song in songs"
+              :key="songs.indexOf(song)"
+              :song="song"
+          />
+        </div>
+      </q-card>
+    </div>
 	</div>
 </template>
 
@@ -32,7 +61,7 @@
 						title: 'Lithium',
 						author: 'Nirvana',
 						album: 'Nevermind',
-						views: 370000000,
+						views: 21000000,
 					},
 					{
 						cover: 'niemozliwe.jpg',
